@@ -1,0 +1,335 @@
+/******************************************************************
+	
+Stylesheet: Custom Stylesheet
+
+Add any non-foundation css here
+
+******************************************************************/
+
+
+//////////////////////////////////////////////
+//*** EXTRA CUSTOM VARIABLES  ***
+//////////////////////////////////////////////
+
+$thin-border: 1px solid #eeeeee;
+
+$outer-padding: 1%; // Helps at mobile widths 
+
+$max-logo-width: 250; // unit is set in #logo styles approx line 100
+
+// Style dropdowns
+$dropitem-pad-v: 8px;
+$dropitem-pad-h: 18px;
+
+$header-color: inherit; // header tags
+$body-font-size: rem-calc(15);
+
+$sidebar-side-padding: 40px;
+
+//////////////////////////////////////////////
+//*** GENERAL STYLES ***
+//////////////////////////////////////////////
+
+noscript { display: block; width: 100%; text-align: center; padding: $global-padding; background: $primary-color; color: #fff; }
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+} // prevents flash of un-transitioned elements with css transitions, removed with js 
+
+.load-with-js, .wf-loading {
+  opacity: 0;
+}
+.wf-active, .wf-inactive {
+  opacity: 1;
+}
+#wrapper { @include css-transition(all, .5s, ease-in-out); } //fades-in content on load with .load-with-js class
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+*:focus { outline: 0; }
+
+.clear:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+//////////////////////////////////////////////
+//*** TOP BAR ***
+//////////////////////////////////////////////
+
+.position-right.is-open ~ .off-canvas-content {
+	@include breakpoint(large) { transform: translateX(0); }
+}
+
+#header { border-bottom: $thin-border; padding: $global-padding $outer-padding; }
+
+/**SEE scrollheader.scss for fixed header on scroll styles**/
+
+#logo {
+	display: block;
+	width: $max-logo-width*.5px; height: auto; @include breakpoint(mid) { width: $max-logo-width*.66px; } @include breakpoint(medium) { width: $max-logo-width*.75px; } @include breakpoint(xlarge) { width: $max-logo-width*1px; }
+	cursor:hand;
+}
+#logo h1 { margin: 0; }
+
+
+.top-bar .top-bar-left, .top-bar .top-bar-right { width: auto; }
+.top-bar-left { float: left; }
+.top-bar-right { float: right; }
+.top-bar-right ul.menu { margin-top: $global-padding*0.5; #header & { margin-top: $global-padding; }
+	.top-bar & > li { padding: 0 0 10px 55px; }
+	.top-bar & > li:first-child { padding-left: 0; }
+	a { color: $secondary-color; font: $body-font-size $header-font-family; padding: 5px 1px; @include css-transition(all, .5s, ease-in-out); @include breakpoint(xlarge) { font-size: $body-font-size*1.1; } }
+	a:hover, .current_page_item > a, .current_page_parent > a:hover { color: $primary-color; } // NAVIGATION HOVER & CURRENT EFFECT, also maybe include .current_page_item > a:hover
+	.active > a { background: inherit; }
+	.current_page_parent > a {
+		color: $secondary-color; 
+	}
+	ul.is-dropdown-submenu { opacity: 0; visibility: hidden; display: block; border: 1px solid #d7d7d7; margin: 0; list-style: none;
+        @include css-transition(opacity, .5s, ease-in-out); @include box-shadow(0, 0, 7px, rgba(0,0,0,.08)); 
+		& > li { padding: 0; border: 1px solid #fff; margin-top: -1px; }
+		& > li:first-child { margin-top: 0; }
+		li a { background-color: #f9f9f9; color: $anchor-color; border: 0; font-weight: normal; color: #000; display: block; padding: $dropitem-pad-v $dropitem-pad-h; }
+		li a:hover, li.current_page_item > a { color:#02617f; background-color: #eeeeee; } // NAVIGATION DROPDOWN HOVER & CURRENT EFFECT
+	}
+	li:hover .is-dropdown-submenu.first-sub, li.is-dropdown-submenu-parent.is-submenu-item:hover .is-dropdown-submenu { opacity: 1; visibility: visible; }
+    
+}
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a { padding-right: 0; }
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:after { display: none; }
+.dropdown.menu.medium-horizontal > li.opens-left > .is-dropdown-submenu { top: 99%; }
+/*
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:hover:after, .dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent.current_page_item>a:after, .dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent.current_page_parent>a:after { border-color: $menu-item-color-active transparent transparent; }
+*/
+
+.menu-toggle { float: right;
+	.menu.toggle-icon { text-align: center;
+		a { padding: 10px; background-color: $light-gray; display: inline-block; @include css-transition(all, .5s, ease-in-out);
+			&:hover { background-color: $primary-color; }
+			.menu-icon { padding: 0; height: 20px; }
+			.menu-icon:after { top: 2px; background-color: $medium-gray; box-shadow: 0 7px 0 $medium-gray,0 14px 0 $medium-gray; }
+			&:hover .menu-icon:after { background-color: #fff; box-shadow: 0 7px 0 #fff,0 14px 0 #fff; }
+		}
+	}
+}
+
+.off-canvas { display: block;
+	
+	#menu-top-navigation { border-bottom: 1px solid $medium-gray; padding-bottom: 1em; width: 100%; display: block;
+		li { list-style: none; }
+		a { line-height: 1; }
+		a:hover { background: #efefef; }
+		.menu-item-has-children > a { color: $dark-gray; }
+		.menu-item-has-children > a:hover { color: $anchor-color-hover;  }
+		.is-accordion-submenu-parent>a:hover:after { border-color: $anchor-color-hover transparent transparent; }
+		ul.sub-menu { margin: 0; height: 100%; border-left: 1px solid $light-gray;
+			a { padding: $menu-item-padding; display: block!important; }
+			a:hover {  }
+			.js-drilldown-back > a { border-bottom: 1px solid $light-gray; }
+			.js-drilldown-back > a::before { vertical-align: baseline; }
+			//.menu-item-has-children { margin-left: -5%; }
+			.menu-item-has-children > a { color: $anchor-color; }
+			.menu-item-has-children > a:hover { color: $anchor-color-hover; }
+		}
+	}
+	.widget { padding: 1em; border-bottom: 1px solid $light-gray; }
+	
+}
+
+
+//////////////////////////////////////////////
+//*** PAGE STYLES ***
+//////////////////////////////////////////////
+
+#content { padding: $global-padding $outer-padding; min-height: 500px; }
+
+#inner-content { padding-top: $global-padding; padding-bottom: $global-padding*1.5; }
+
+#page_slider {  }
+
+#page_header { background-position: center; background-size: cover; border-bottom: $thin-border;
+  .row { position: relative; padding: $global-padding*2; @include breakpoint(medium) { padding: $global-padding*2 0; } }
+  #header_text { position: relative; display: inline-block; width: 100%; max-width: 100%; padding: 0 $global-padding*2; }
+  #page-title { margin-bottom: 0; }
+  #with_title { padding-top: $global-padding; }
+}
+#page_header.with_bg {
+  .row { padding: $global-padding*2 0; min-height: 200px; @include breakpoint(medium) { padding: 0; min-height: 380px; } }
+  #header_text { width: 100%; @include breakpoint(medium) { position: absolute; }
+    h1, h2, h3, h4, h5, h6, p, li, a { color: #fff; }
+  }
+}
+
+#inner-content {
+  #page-title { margin-bottom: 1.5rem; }
+  article {
+    h2, h3, h4, h5, h6 { padding-top: .5rem; }
+  }
+}
+
+    //////////////////////////////////////////////
+    //*** RESPONSIVE TABLES ***
+    //////////////////////////////////////////////
+    
+    // ALSO see scripts.js
+    
+    table { border-spacing: 0; border-collapse: collapse;
+      td { border: $table-border; }
+    }
+    
+    @include breakpoint(small only) {
+      table {width:100%;}
+      thead {display: none;}
+      //tr:nth-of-type(2n) {background-color: inherit;}
+      //tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+      tbody td {display: block;  text-align:center;}
+      tbody td:before { 
+          content: attr(data-th); 
+          display: block;
+          text-align:center; font-weight: bold; color: $primary-color; font-size: $body-font-size*1.2; 
+      }
+    }
+    
+    //////////////////////////////////////////////
+    //*** FEATHERLIGHT LIGHTBOX STYLES ***
+    //////////////////////////////////////////////
+    
+    .featherlight .featherlight-content { background: none!important; }
+
+
+//////////////////////////////////////////////
+//*** HOMEPAGE STYLES ***
+//////////////////////////////////////////////
+
+.home {
+    
+  #page_header .row { height: 250px; @include breakpoint(medium) { height: 380px; } @include breakpoint(large) { height: 500px; } }
+    
+}
+
+//////////////////////////////////////////////
+//*** PAGES TEMPLATES ***
+//////////////////////////////////////////////
+
+.error404 #inner-content .search { padding: $global-padding 0; }
+
+
+@include breakpoint(large) {
+  .archive-grid { display: flex;
+    .flexcolumns { display: flex; padding: $global-padding*0.5; 
+      article { padding: $global-padding*0.5 $global-padding $global-padding; border: $thin-border; }
+    }
+  }
+}
+
+
+//////////////////////////////////////////////
+//*** PAGE NAVIGATION  *** 
+//////////////////////////////////////////////
+
+.page-navigation { padding-top: $global-padding; }
+
+
+//////////////////////////////////////////////
+//*** SIDEBAR *** 
+//////////////////////////////////////////////
+
+#sidebar { padding-top: $global-padding; padding-left: $sidebar-side-padding;
+
+    &.medium-pull-8 { padding-left: 0; padding-right: $sidebar-side-padding; }
+	
+	.widget { margin-bottom: $global-padding*1.5;
+
+        .widgettitle { font-weight: 500; }
+    
+        h1,h2,h3,h4,h5,h6 {  }
+    
+        p { margin-bottom: 6px; }
+    
+        .button { margin-bottom: 0; }
+        
+        &:after 
+        {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+		/*input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea { margin-bottom: 10px; }
+		
+        &.widget_search {
+            input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea { margin-bottom: 0; }
+        }*/
+        
+    }
+	
+	.menu {
+		li { display: list-item; padding: 1px 0;
+			a { display: inline-block; line-height: 1; padding: 0.5rem; }
+			a:hover{
+				color: black; 
+				background-color: $light-gray;
+			}
+			ul.sub-menu { padding: 2px 0;
+				> li { font-size: .95em; list-style: none; }
+                ul.sub-menu li { font-size: 1em; }
+			}	
+		}
+	}
+	
+}
+
+
+#page_footer { background-position: center; background-size: cover; border-bottom: $thin-border;
+  .row { position: relative; padding: $global-padding*2; @include breakpoint(medium) { padding: $global-padding*2 0; } }
+  #footer_text { position: relative; display: inline-block; width: 100%; max-width: 100%; padding: 0 $global-padding*2; }
+}
+#page_footer.with_bg {
+  .row { padding: $global-padding*2 0; min-height: 200px; @include breakpoint(medium) { padding: 0; min-height: 380px; } }
+  #footer_text { width: 100%; @include breakpoint(medium) { position: absolute; }
+    h1, h2, h3, h4, h5, h6, p, li, a { color: #fff; }
+  }
+}
+
+//////////////////////////////////////////////
+//*** FOOTER *** 
+//////////////////////////////////////////////
+
+#footer { padding: $global-padding $outer-padding; border-top: $thin-border;
+  .columns { text-align: center; }
+  @include breakpoint(medium) { .columns { text-align: left; } .right_col { text-align: right; } }
+}
+
+ul.socmedia { display: inline-block; margin: 0;
+  li { display: inline-block; padding: 0 10px 0 0; text-align: center;
+    a { display: block; @include rounded(2rem); width: 36px; height: 36px; border: 2px solid $primary-color; background: $primary-color; position: relative; }
+     img { position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); }
+  }
+}

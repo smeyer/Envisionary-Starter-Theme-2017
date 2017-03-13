@@ -1,0 +1,132 @@
+//////////////////////////////////////////////
+//*** STAFF STYLES *** 
+//////////////////////////////////////////////
+
+.circular-image img {                
+	width: 300px;                
+	height: 300px;                
+	-webkit-border-radius: 150px;                
+	-moz-border-radius: 150px;                
+	-ms-border-radius: 150px;                
+	-o-border-radius: 150px; border-radius: 150px;                             
+	  }
+.staff-featured-image{
+	width:300px;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.staff-quote{
+	width:100%;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-style:italic;
+}
+.single-staff .entry-title{
+	width:100%;
+	text-align:center;
+
+}
+.single-staff .job{
+	width:100%;
+	text-align:center;
+	font-weight:600;
+}
+
+.staff-holder{
+	width:100%;
+	position:static;
+	padding:20px;
+	border-radius:7px;
+	@include breakpoint(medium) {
+		
+		width:300px;
+		float:left;
+	
+		}
+	@include breakpoint(medium) {
+		
+		position:absolute;
+		
+		}
+}
+
+.top-bar li{
+	list-style:none;
+}
+
+.staff-image{
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.staff-image img{
+	border-radius:50px;
+}
+.staff-name, .staff-quote, .staff-job{
+	width:100%;
+	text-align:center;
+	padding:5px;
+}
+h2.staff-title{
+	font-size:22px;
+	marign-bottom:5px;
+}
+.staff-job{
+	font-size:18px;
+	font-weight:600;
+} 
+.bc-item{
+	width:100%;
+	float:left;
+	
+	display:block;
+	margin-bottom:25px;
+	@include breakpoint(medium) {
+		width:20%;
+	}
+}
+.staff-summary{
+	overflow:hidden;
+	position:relative;
+}
+.staff-bc{
+	overflow:hidden;
+}
+.our-staff{
+	width:100%;
+	max-width:1280px;
+	text-align:center;
+}
+.staff-header{
+	width:100%;
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	@include breakpoint(medium) {
+		
+	} 
+	@include breakpoint(large) {
+		width:1200px;
+	}
+}
+.page-template-template-display-staff #inner-content{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	@include breakpoint(medium) {
+		width:600px;
+	} 
+	@include breakpoint(large) {
+		width:1200px;
+	}
+}
+
+.page-template-template-display-staff #main{
+	min-height:100%;
+}
+
+.page-template-template-display-staff #sidebar1, .single-staff #sidebar1 { padding-left: $sidebar-side-padding; }

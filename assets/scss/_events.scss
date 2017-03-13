@@ -1,0 +1,21 @@
+//////////////////////////////////////////////
+//*** EVENTS STYLES *** 
+//////////////////////////////////////////////
+
+// EVENTS ARCHIVE
+
+.display-events {
+	article.event { padding-bottom: 20px; }
+		.events-title {  }
+		.events-featured-image { float:right; margin-left:15px; }
+		.entry-content{
+			h2.events-title {
+				a {  }	
+			}
+		}
+}
+
+// SINGLE EVENTS
+
+
+.page-template-template-display-events #sidebar1, .single-events #sidebar1 { padding-left: $sidebar-side-padding; }

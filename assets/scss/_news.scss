@@ -1,0 +1,36 @@
+//////////////////////////////////////////////
+//*** NEWS STYLES *** 
+//////////////////////////////////////////////
+
+// NEWS ARCHIVE
+
+.display-news {
+	article.news { padding-bottom: 20px; }
+		.news-featured-image { float:right; margin-left:15px; }
+		.entry-content{
+			h2.news-title {
+				a {  }	
+			}
+		}
+}
+
+
+// SINGLE NEWS
+
+.single-news {
+	.entry-content{
+		.news-featured-image { margin-bottom: 20px; }
+	}
+	
+}
+
+.page-template-template-display-news #sidebar1, .single-news #sidebar1 { padding-left: $sidebar-side-padding; }
+
+/*
+.type-news{
+		margin-bottom: 30px;
+		border-bottom-color: $slider-background;
+		border-bottom-style: solid;
+		border-bottom-width:1px;
+	}
+*

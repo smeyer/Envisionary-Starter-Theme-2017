@@ -1,0 +1,42 @@
+[
+    {
+        "key": "group_58b8583caa059",
+        "title": "IMPORTANT! for Full Browser Width",
+        "fields": [
+            {
+                "key": "field_58b858439a0d2",
+                "label": "USE AN H1",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "This template is meant to give the editor complete design control (using Visual Composer, etc). If you are using this template, you'll need\/want to manually use an h1 somewhere in your content.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "template-browser-width.php"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

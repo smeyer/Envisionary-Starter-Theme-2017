@@ -1,0 +1,29 @@
+//////////////////////////////////////////////
+//*** BLOG *** 
+//////////////////////////////////////////////
+
+
+// POST ARCHIVE
+
+.blog article.post { margin-bottom: 20px; 
+	.post-featured-image { float:right; margin-left:15px; }
+	.entry-content{
+		h2.post-title {
+			a {  }	
+		}
+	}
+}
+
+// SINGLE POST
+
+.single-post {
+	article.post {
+		.post-featured-image { margin-bottom: 20px; }
+	}
+}
+
+.post_time { }
+.post_author { }
+
+
+//.blog #sidebar1, .single-post #sidebar1 { padding-left: $sidebar-side-padding; }

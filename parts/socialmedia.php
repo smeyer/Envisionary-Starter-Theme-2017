@@ -1,0 +1,9 @@
+<?php if(env_field('facebook_link', true, true) || env_field('twitter_link', true, true) || env_field('linkedin_link', true, true) || env_field('instagram_link', true, true) || env_field('google_link', true, true)) { ?>
+<ul class="socmedia clear">
+	<?php if(env_field('facebook_link', true, true)) { ?><li><a href="<?php env_field('facebook_link', false, true); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon_fb.png" width="18" height="20" alt="Facebook" /></a></li><?php } ?>
+	<?php if(env_field('twitter_link', true, true)) { ?><li><a href="<?php env_field('twitter_link', false, true); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon_tw.png" width="18" height="20" alt="Twitter" /></a></li><?php } ?>
+	<?php if(env_field('linkedin_link', true, true)) { ?><li><a href="<?php env_field('linkedin_link', false, true); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon_li.png" width="18" height="20" alt="LinkedIn" /></a></li><?php } ?>
+	<?php if(env_field('instagram_link', true, true)) { ?><li><a href="<?php env_field('instagram_link', false, true); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon_in.png" width="18" height="20" alt="Instagram" /></a></li><?php } ?>
+	<?php if(env_field('google_plus_link', true, true)) { ?><li><a href="<?php env_field('google_plus_link', false, true); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon_gp.png" width="18" height="20" alt="Google Plus" /></a></li><?php } ?>
+</ul>
+<?php } ?>

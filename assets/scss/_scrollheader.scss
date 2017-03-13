@@ -1,0 +1,15 @@
+#scrollheader { display: none!important; background: #fff; }
+@include breakpoint(large) {
+  #scrollheader { display: block!important; z-index: 999;
+    position: fixed; top: -200px;
+    transition: top 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    width: 100%; border-bottom: $thin-border;
+    padding: $global-padding*0.5 $outer-padding;
+  }
+  #scrollheader.scrolled {
+    top: 0;
+  }
+}
+#scrollheader .top-bar { padding: 0 .5rem; }
+#scrollheader #logo { width: $max-logo-width*.5px; height: auto; }
+#scrollheader .menu-toggle { margin-top: 5px; }

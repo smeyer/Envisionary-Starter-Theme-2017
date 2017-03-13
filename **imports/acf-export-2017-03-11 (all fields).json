@@ -1,0 +1,1732 @@
+[
+    {
+        "key": "group_58b8583caa059",
+        "title": "IMPORTANT! for Full Browser Width",
+        "fields": [
+            {
+                "key": "field_58b858439a0d2",
+                "label": "USE AN H1",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "This template is meant to give the editor complete design control (using Visual Composer, etc). If you are using this template, you'll need\/want to manually use an h1 somewhere in your content.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "template-browser-width.php"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_58b84ce9bb6a2",
+        "title": "Global Info",
+        "fields": [
+            {
+                "key": "field_58c1b58607620",
+                "label": "General Contact Info",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58b84cf844ce1",
+                "label": "Phone #",
+                "name": "phone_num",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b84d2044ce2",
+                "label": "Address",
+                "name": "address",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_58b84d3144ce3",
+                "label": "Email",
+                "name": "email",
+                "type": "email",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_58c1b55ae4fb1",
+                "label": "Social Media Links",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58b84d3e44ce4",
+                "label": "Facebook Link",
+                "name": "facebook_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b84d4644ce5",
+                "label": "Twitter Link",
+                "name": "twitter_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b84d4eb83d5",
+                "label": "LinkedIn Link",
+                "name": "linkedin_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b84d5ab83d6",
+                "label": "Instagram Link",
+                "name": "instagram_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b84d67b83d7",
+                "label": "Google Plus Link",
+                "name": "google_plus_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c1b4b9e8315",
+                "label": "Page Header",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58c1d9422cf23",
+                "label": "Include Default Page Header?",
+                "name": "default_global_header",
+                "type": "radio",
+                "instructions": "can still be overwritten at the page level",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "no",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58bf18356e223",
+                "label": "Page Header Default Image",
+                "name": "page_header_default_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_58b84d79b83d8",
+                "label": "Page Header Background Color",
+                "name": "page_header_bg_color",
+                "type": "color_picker",
+                "instructions": "This is a global setting. You can override this at the page level.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58c1dd8f2cf26",
+                "label": "Page Header Height",
+                "name": "page_header_height",
+                "type": "number",
+                "instructions": "in pixels...do not include \"px\"",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_58c1dd2c2cf25",
+                "label": "Add page title to header?",
+                "name": "add_page_title",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "no",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c1dd1b2cf24",
+                "label": "Page Header Page Title Color",
+                "name": "page_header_page_title_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58c1dd2c2cf25",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58b84facb83dd",
+                "label": "Page Header Text Width",
+                "name": "page_header_text_width",
+                "type": "text",
+                "instructions": "in percentage (%) or pixels (px) i.e. 35% or 200px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "100%",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b853d7723af",
+                "label": "Page Header Text Color",
+                "name": "page_header_text_color",
+                "type": "color_picker",
+                "instructions": "This value is for solid color backgrounds only. If you use an image as your background, the text will default as white or as assigned in the editor.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58bf20c8ef4bb",
+                "label": "Page Header Center Text?",
+                "name": "page_header_center_text",
+                "type": "radio",
+                "instructions": "This will override all above positioning values. Centers horizontally and vertically within banner.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "yes",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58b84e02b83d9",
+                "label": "Page Header Text Space from Top",
+                "name": "page_header_text_space_from_top",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px\r\nThis is a global setting. You can override this at the page level.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58bf20c8ef4bb",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b84f47b83dc",
+                "label": "Page Header Text Space from Left",
+                "name": "page_header_text_space_from_left",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px\r\nThis is a global setting. You can override this at the page level.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c1d9422cf23",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58bf20c8ef4bb",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c304c1e775e",
+                "label": "Page Footer",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58c304c6e775f",
+                "label": "Include Default Page Footer?",
+                "name": "default_global_footer",
+                "type": "radio",
+                "instructions": "can still be overwritten at the page level",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "no",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c304c9e7760",
+                "label": "Page Footer Default Image",
+                "name": "page_footer_default_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_58c304cde7761",
+                "label": "Page Footer Background Color",
+                "name": "page_footer_background_color",
+                "type": "color_picker",
+                "instructions": "This is a global setting. You can override this at the page level.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58c304cfe7762",
+                "label": "Page Footer Height",
+                "name": "page_footer_height",
+                "type": "number",
+                "instructions": "in pixels...do not include \"px\"",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_58c304d8e7763",
+                "label": "Page Footer Text Width",
+                "name": "page_footer_text_width",
+                "type": "text",
+                "instructions": "in percentage (%) or pixels (px) i.e. 35% or 200px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "100%",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c304dde7764",
+                "label": "Page Footer Text Color",
+                "name": "page_footer_text_color",
+                "type": "color_picker",
+                "instructions": "This value is for solid color backgrounds only. If you use an image as your background, the text will default as white or as assigned in the editor.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58c304dfe7765",
+                "label": "Page Footer Center Text?",
+                "name": "page_footer_center_text",
+                "type": "radio",
+                "instructions": "This will override all above positioning values. Centers horizontally and vertically within banner.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "yes",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c304e2e7766",
+                "label": "Page Footer Text Space from Top",
+                "name": "page_footer_text_space_from_top",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px\r\nThis is a global setting. You can override this at the page level.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58c304dfe7765",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c304e4e7767",
+                "label": "Page Footer Text Space from Left",
+                "name": "page_footer_text_space_from_left",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px\r\nThis is a global setting. You can override this at the page level.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c304c6e775f",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58c304dfe7765",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-global-info"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_58b8580fc31be",
+        "title": "Homepage",
+        "fields": [
+            {
+                "key": "field_58b8581739051",
+                "label": "Header Text",
+                "name": "header_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "template-home.php"
+                }
+            ]
+        ],
+        "menu_order": 3,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_58c303c7b6630",
+        "title": "Page Footer",
+        "fields": [
+            {
+                "key": "field_58c303c7c08d9",
+                "label": "Page Footer Type",
+                "name": "page_footer_type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "Default",
+                    "none": "None",
+                    "custom": "Custom"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "default",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c303c7c08f2",
+                "label": "Footer Note",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "IMPORTANT! You can set global values in <strong>\"Global Info\"<\/strong> section",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_58c303c7c08fc",
+                "label": "Footer Image",
+                "name": "footer_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_58c303c7c0907",
+                "label": "Footer Background Color",
+                "name": "footer_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58c303c7c0912",
+                "label": "Footer Height",
+                "name": "footer_height",
+                "type": "text",
+                "instructions": "in pixels...do not include \"px\"",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c303c7c091c",
+                "label": "Show Text Options?",
+                "name": "include_custom_text",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "no",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c303c7c093b",
+                "label": "Footer Text",
+                "name": "footer_text",
+                "type": "wysiwyg",
+                "instructions": "If you use an h1 tag in this box, the page title, which is the h1 for the page, will not display in the content area.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "default"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_58c303c7c0944",
+                "label": "Footer Text Width",
+                "name": "footer_text_width",
+                "type": "text",
+                "instructions": "in percentage (%) or pixels (px)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58c303c7c091c",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "100%",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c303c7c094f",
+                "label": "Center Banner Text?",
+                "name": "footer_center_banner_text",
+                "type": "radio",
+                "instructions": "This will override all above positioning values. Centers horizontally and vertically within banner.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58c303c7c091c",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No",
+                    "default": "Default (positioning based on global values)"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "yes",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c303c7c0957",
+                "label": "Space from Top",
+                "name": "footer_space_from_top",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58c303c7c091c",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58c303c7c094f",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58c303c7c0962",
+                "label": "Space from Left",
+                "name": "footer_space_from_left",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58c303c7c08d9",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58c303c7c091c",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58c303c7c094f",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_58a27c4266bd0",
+        "title": "Page Header",
+        "fields": [
+            {
+                "key": "field_58b7421565030",
+                "label": "Page Header Type",
+                "name": "header_type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "Default",
+                    "none": "None",
+                    "custom": "Custom",
+                    "shortcode": "Slider Shortcode"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "default",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58a27c540f02b",
+                "label": "Header Shortcode",
+                "name": "header_shortcode",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "shortcode"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bf313905d7d",
+                "label": "Header Note",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "IMPORTANT! You can set global values in <strong>\"Global Info\"<\/strong> section",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_58a27c470f02a",
+                "label": "Header Image",
+                "name": "header_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_58b7473e192e3",
+                "label": "Background Color",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58c1e97df145a",
+                "label": "Header Height",
+                "name": "header_height",
+                "type": "text",
+                "instructions": "in pixels...do not include \"px\"",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58b742ad65031",
+                "label": "Show Text Options?",
+                "name": "include_custom_text",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "no",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58bf2bf47ef91",
+                "label": "Add page title to header?",
+                "name": "add_page_title",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58b742ad65031",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "no",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58c1dc3495561",
+                "label": "Page Title Color",
+                "name": "page_title_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58b742ad65031",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58bf2bf47ef91",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_58a27c6d0f02c",
+                "label": "Header Text",
+                "name": "header_text",
+                "type": "wysiwyg",
+                "instructions": "If you use an h1 tag in this box, the page title, which is the h1 for the page, will not display in the content area.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "default"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_58a2905372f09",
+                "label": "Header Text Width",
+                "name": "header_text_width",
+                "type": "text",
+                "instructions": "in percentage (%) or pixels (px)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58b742ad65031",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "100%",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bf30f926a3a",
+                "label": "Center Banner Text?",
+                "name": "center_banner_text",
+                "type": "radio",
+                "instructions": "This will override all above positioning values. Centers horizontally and vertically within banner.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58b742ad65031",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No",
+                    "default": "Default (positioning based on global values)"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "yes",
+                "layout": "vertical",
+                "return_format": "value"
+            },
+            {
+                "key": "field_58a27cb20f02d",
+                "label": "Space from Top",
+                "name": "space_from_top",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58b742ad65031",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58bf30f926a3a",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58a27cbf0f02e",
+                "label": "Space from Left",
+                "name": "space_from_left",
+                "type": "text",
+                "instructions": "must use percentage (%) or pixels (px) i.e. 35% or 200px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_58b7421565030",
+                            "operator": "==",
+                            "value": "custom"
+                        },
+                        {
+                            "field": "field_58b742ad65031",
+                            "operator": "==",
+                            "value": "yes"
+                        },
+                        {
+                            "field": "field_58bf30f926a3a",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

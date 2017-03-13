@@ -1,0 +1,21 @@
+//////////////////////////////////////////////
+/** CUSTOM THEME FORM STYLES */
+//////////////////////////////////////////////
+
+// Adjust Vertical Spacing
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea, [type='file'], [type='checkbox'], [type='radio'] { margin-bottom: 0.5rem; }
+.gform_wrapper .gfield_radio li label, .gform_wrapper .gfield_checkbox li label { margin-bottom: 0.5rem; }
+
+// Adjust sublabel spacing
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_below div[class*="gfield_time_"].ginput_container label { margin: -3px 0 0.25rem 1px; }
+
+// Adjust vertical spacing of lower descriptions
+.gform_wrapper .field_description_below .gfield_description { padding-top: 2px; }
+
+// Adjust padding for error message
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding: 0 0.5rem 0.5rem; }
+
+// Style Confirmation Box
+.gform_confirmation_wrapper { padding: $global-padding; background: $light-gray; text-align: center; font-size: $body-font-size*1.2; }
+
+.gform_wrapper .gsection .gfield_label, .gform_wrapper h2.gsection_title, .gform_wrapper h3.gform_title, .gform_wrapper label.gfield_label { font-weight: 500; font-family: $header-font-family; }
